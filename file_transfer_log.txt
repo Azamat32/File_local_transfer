@@ -1,0 +1,132 @@
+2024-12-01 15:25:09,247 - INFO - New file detected: C:/Users/User/Desktop/доки/194220cb-58ae-420e-bd90-a1a7d9a2aa8f.jfif
+2024-12-01 15:25:09,252 - INFO - Encryption key generated: {file_path} 
+2024-12-01 15:25:09,254 - INFO - File split into chunks: {file_path}
+2024-12-01 15:25:45,917 - INFO - Chunks encoded into QR codes: {file_path}
+2024-12-01 22:48:07,758 - INFO - New file detected: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 22:48:07,766 - INFO - Encryption key generated for: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 22:48:07,766 - INFO - File split into chunks: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 22:48:29,640 - INFO - Chunks encoded into QR codes: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 22:48:42,856 - INFO - QR codes decoded successfully for: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 22:48:42,868 - INFO - File reassembled and saved to: receive\116.jpg
+2024-12-01 22:48:42,948 - INFO - QR codes deleted successfully for: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 22:48:42,948 - INFO - Original file deleted from SEND_DIR: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 22:53:10,635 - INFO - New file detected: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:53:10,645 - INFO - Encryption key generated for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:53:10,645 - INFO - File split into chunks: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:53:16,054 - INFO - Chunks encoded into QR codes: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:53:19,700 - INFO - QR codes decoded successfully for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:53:19,704 - INFO - File reassembled and saved to: receive\Cover Letter.docx
+2024-12-01 22:53:19,728 - INFO - QR codes deleted successfully for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:53:19,728 - INFO - Original file deleted from SEND_DIR: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:55:46,169 - INFO - New file detected: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:55:46,169 - INFO - Encryption key generated for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:55:46,177 - INFO - File split into chunks: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:55:51,466 - INFO - Chunks encoded into QR codes: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:55:54,723 - INFO - QR codes decoded successfully for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:55:54,737 - INFO - File reassembled and saved to: receive\Cover Letter.docx
+2024-12-01 22:55:54,749 - INFO - QR codes deleted successfully for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:55:54,757 - INFO - Original file deleted from SEND_DIR: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:56:17,967 - INFO - New file detected: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:56:17,967 - INFO - Encryption key generated for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:56:17,975 - INFO - File split into chunks: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:56:23,152 - INFO - Chunks encoded into QR codes: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:56:26,381 - INFO - QR codes decoded successfully for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:56:26,383 - INFO - File reassembled and saved to: receive\Cover Letter.docx
+2024-12-01 22:56:26,397 - INFO - QR codes deleted successfully for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:56:26,405 - INFO - Original file deleted from SEND_DIR: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:56:50,740 - INFO - New file detected: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:56:50,748 - INFO - Encryption key generated for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:56:50,748 - INFO - File split into chunks: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:56:55,810 - INFO - Chunks encoded into QR codes: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:56:59,081 - INFO - QR codes decoded successfully for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:56:59,084 - INFO - File reassembled and saved to: receive\Cover Letter.docx
+2024-12-01 22:56:59,102 - INFO - QR codes deleted successfully for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:56:59,102 - INFO - Original file deleted from SEND_DIR: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 22:57:44,380 - INFO - New file detected: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 22:57:44,380 - INFO - Encryption key generated for: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 22:57:44,388 - INFO - File split into chunks: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 22:58:07,422 - INFO - Chunks encoded into QR codes: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 22:58:19,664 - INFO - QR codes decoded successfully for: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 22:58:19,672 - INFO - File reassembled and saved to: receive\116.jpg
+2024-12-01 22:58:19,749 - INFO - QR codes deleted successfully for: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 22:58:19,757 - INFO - Original file deleted from SEND_DIR: send\116.jpg
+2024-12-01 23:06:04,730 - INFO - New file detected: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 23:06:04,730 - INFO - Encryption key generated for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 23:06:04,738 - INFO - Error processing file C:/Users/User/Desktop/доки/Cover Letter.docx: Key must be 16, 24, or 32 bytes long.
+2024-12-01 23:08:39,193 - INFO - New file detected: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 23:08:39,193 - INFO - Encryption key generated for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 23:08:39,322 - INFO - File split into chunks: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 23:08:44,912 - INFO - Chunks encoded into QR codes: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 23:08:48,195 - INFO - QR codes decoded successfully for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 23:08:48,199 - INFO - File reassembled and saved to: receive\Cover Letter.docx
+2024-12-01 23:08:48,215 - INFO - QR codes deleted successfully for: C:/Users/User/Desktop/доки/Cover Letter.docx
+2024-12-01 23:08:48,215 - INFO - Original file deleted from SEND_DIR: send\Cover Letter.docx
+2024-12-01 23:09:20,589 - INFO - New file detected: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 23:09:20,597 - INFO - Encryption key generated for: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 23:09:20,605 - INFO - File split into chunks: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 23:09:43,683 - INFO - Chunks encoded into QR codes: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 23:09:57,746 - INFO - QR codes decoded successfully for: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 23:09:57,749 - INFO - File reassembled and saved to: receive\116.jpg
+2024-12-01 23:09:57,830 - INFO - QR codes deleted successfully for: C:/Users/User/Desktop/доки/116.jpg
+2024-12-01 23:09:57,830 - INFO - Original file deleted from SEND_DIR: send\116.jpg
+2024-12-01 23:15:48,134 - INFO - New file detected: C:/Users/User/Desktop/test.docx
+2024-12-01 23:15:48,142 - INFO - Encryption key generated for: C:/Users/User/Desktop/test.docx
+2024-12-01 23:15:48,142 - INFO - File split into chunks: C:/Users/User/Desktop/test.docx
+2024-12-01 23:15:58,233 - INFO - Chunks encoded into QR codes: C:/Users/User/Desktop/test.docx
+2024-12-01 23:16:04,526 - INFO - QR codes decoded successfully for: C:/Users/User/Desktop/test.docx
+2024-12-01 23:16:04,534 - INFO - File reassembled and saved to: receive\test.docx
+2024-12-01 23:16:04,566 - INFO - QR codes deleted successfully for: C:/Users/User/Desktop/test.docx
+2024-12-01 23:16:04,568 - INFO - Original file deleted from SEND_DIR: send\test.docx
+2024-12-01 23:37:24,959 - INFO - Распознан новый файл: C:/Users/User/Desktop/test.docx
+2024-12-01 23:37:24,969 - INFO - КЛюч был создан для: C:/Users/User/Desktop/test.docx
+2024-12-01 23:37:24,969 - INFO - Файл был разделен: C:/Users/User/Desktop/test.docx
+2024-12-01 23:37:43,104 - INFO - Преображение чанков в QR: C:/Users/User/Desktop/test.docx
+2024-12-01 23:37:53,997 - INFO - QR код был успешно расшифрован: C:/Users/User/Desktop/test.docx
+2024-12-01 23:37:54,000 - INFO - Файл был создан в : receive\test.docx
+2024-12-01 23:37:54,064 - INFO - Все QR коды были успешны в: C:/Users/User/Desktop/test.docx
+2024-12-01 23:37:54,064 - INFO - Оригинальный файл был удален: send\test.docx
+2024-12-01 23:38:18,076 - INFO - Распознан новый файл: C:/Users/User/Desktop/dadsa.txt
+2024-12-01 23:38:18,085 - INFO - КЛюч был создан для: C:/Users/User/Desktop/dadsa.txt
+2024-12-01 23:38:18,085 - INFO - Файл был разделен: C:/Users/User/Desktop/dadsa.txt
+2024-12-01 23:38:18,191 - INFO - Преображение чанков в QR: C:/Users/User/Desktop/dadsa.txt
+2024-12-01 23:38:18,279 - INFO - QR код был успешно расшифрован: C:/Users/User/Desktop/dadsa.txt
+2024-12-01 23:38:18,282 - INFO - Файл был создан в : receive\dadsa.txt
+2024-12-01 23:38:18,288 - INFO - Все QR коды были успешны в: C:/Users/User/Desktop/dadsa.txt
+2024-12-01 23:38:18,288 - INFO - Оригинальный файл был удален: send\dadsa.txt
+2024-12-01 23:38:38,369 - INFO - Распознан новый файл: C:/Users/User/Desktop/заявление.docx
+2024-12-01 23:38:38,373 - INFO - КЛюч был создан для: C:/Users/User/Desktop/заявление.docx
+2024-12-01 23:38:38,373 - INFO - Файл был разделен: C:/Users/User/Desktop/заявление.docx
+2024-12-01 23:38:38,389 - INFO - Преображение чанков в QR: C:/Users/User/Desktop/заявление.docx
+2024-12-01 23:38:38,403 - INFO - Ошибка при расшифроке QR: C:/Users/User/Desktop/заявление.docx
+2024-12-01 23:38:58,825 - INFO - Распознан новый файл: C:/Users/User/Desktop/СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:38:58,833 - INFO - КЛюч был создан для: C:/Users/User/Desktop/СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:38:58,833 - INFO - Файл был разделен: C:/Users/User/Desktop/СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:39:14,316 - INFO - Преображение чанков в QR: C:/Users/User/Desktop/СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:39:23,904 - INFO - QR код был успешно расшифрован: C:/Users/User/Desktop/СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:39:23,907 - INFO - Файл был создан в : receive\СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:39:23,986 - INFO - Все QR коды были успешны в: C:/Users/User/Desktop/СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:39:23,986 - INFO - Оригинальный файл был удален: send\СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:41:23,853 - INFO - Распознан новый файл: C:/Users/User/Desktop/СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:41:23,861 - INFO - КЛюч был создан для: C:/Users/User/Desktop/СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:41:23,861 - INFO - Файл был разделен: C:/Users/User/Desktop/СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:41:30,995 - INFO - Преображение чанков в QR: C:/Users/User/Desktop/СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:41:35,619 - INFO - QR код был успешно расшифрован: C:/Users/User/Desktop/СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:41:35,623 - INFO - Файл был создан в : receive\СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:41:35,657 - INFO - Все QR коды были успешны в: C:/Users/User/Desktop/СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:41:35,657 - INFO - Оригинальный файл был удален: send\СЗ Потребности в серверах для СЦ.docx
+2024-12-01 23:41:56,956 - INFO - Распознан новый файл: C:/Users/User/Desktop/test.docx
+2024-12-01 23:41:56,962 - INFO - КЛюч был создан для: C:/Users/User/Desktop/test.docx
+2024-12-01 23:41:56,962 - INFO - Файл был разделен: C:/Users/User/Desktop/test.docx
+2024-12-01 23:42:06,176 - INFO - Преображение чанков в QR: C:/Users/User/Desktop/test.docx
+2024-12-01 23:42:11,247 - INFO - QR код был успешно расшифрован: C:/Users/User/Desktop/test.docx
+2024-12-01 23:42:11,255 - INFO - Файл был создан в : receive\test.docx
+2024-12-01 23:42:11,290 - INFO - Все QR коды были успешны в: C:/Users/User/Desktop/test.docx
+2024-12-01 23:42:11,292 - INFO - Оригинальный файл был удален: send\test.docx
+2024-12-01 23:42:53,917 - INFO - Распознан новый файл: C:/Users/User/Desktop/Документы_TSARKA/4e796ede-811e-48d0-bd40-639e43f4e92c.pdf
+2024-12-01 23:42:53,924 - INFO - КЛюч был создан для: C:/Users/User/Desktop/Документы_TSARKA/4e796ede-811e-48d0-bd40-639e43f4e92c.pdf
+2024-12-01 23:42:53,924 - INFO - Файл был разделен: C:/Users/User/Desktop/Документы_TSARKA/4e796ede-811e-48d0-bd40-639e43f4e92c.pdf
+2024-12-01 23:43:15,390 - INFO - Преображение чанков в QR: C:/Users/User/Desktop/Документы_TSARKA/4e796ede-811e-48d0-bd40-639e43f4e92c.pdf
+2024-12-01 23:43:28,441 - INFO - QR код был успешно расшифрован: C:/Users/User/Desktop/Документы_TSARKA/4e796ede-811e-48d0-bd40-639e43f4e92c.pdf
+2024-12-01 23:43:28,450 - INFO - Файл был создан в : receive\4e796ede-811e-48d0-bd40-639e43f4e92c.pdf
+2024-12-01 23:43:28,542 - INFO - Все QR коды были успешны в: C:/Users/User/Desktop/Документы_TSARKA/4e796ede-811e-48d0-bd40-639e43f4e92c.pdf
+2024-12-01 23:43:28,542 - INFO - Оригинальный файл был удален: send\4e796ede-811e-48d0-bd40-639e43f4e92c.pdf
