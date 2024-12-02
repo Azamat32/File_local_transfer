@@ -94,7 +94,11 @@ def decode_qr_from_camera():
 
                 # Handle chunk format: base64-encoded encrypted data
                 decoded_chunk = base64.b64decode(qr_data)
+                print(decoded_chunk)
                 decoded_chunks.append(decoded_chunk)
+                if len(decoded_chunks) >= 5:  # Example: Stop after 5 chunks (or another condition)
+                    print("Collected enough chunks, stopping QR scanning.")
+                    break  # Exit the loop when enough chunks are collected
 
             except Exception as e:
                 print(f"Error decoding QR: {e}")
