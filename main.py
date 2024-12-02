@@ -1,12 +1,12 @@
 import os
 import threading
 from src.encoder import split_file_to_chunks, encode_chunks_to_qr
-from src.decoder import decode_qr_from_directory
+from src.decoder import decode_qr_from_directory,decode_qr_from_camera
 from src.file_assembler import assemble_file
 from src.encryption import generate_key
-from src.gui import FileTransferGUI
+from src.gui import FileTransferGUI,ModeSelectionGUI
 import logging
-
+import time
 import tkinter as tk
 
 SEND_DIR = "send"
@@ -62,6 +62,11 @@ def run_gui():
             log_message(f"Преображение чанков в QR: {file_path}")
 
             app.update_progress(50)
+            for i, qr_code in enumerate(qr_codes):
+                print(f"Показ QR-кода {i + 1}/{len(qr_codes)}")
+                app.display_qr_code(qr_code)  # Отображение QR-кода через GUI
+                
+                time.sleep(5)  # Интервал между показами
 
             # Шаг 4: Расшифрока QR кодов
             decoded_chunks = decode_qr_from_directory(key,directory=QR_CODES_DIR,)
@@ -98,17 +103,37 @@ def run_gui():
 
     root.mainloop()
 
+def run_client():
+    print("Клиент: Открытие камеры для считывания QR-кодов...")
+    decoded_chunks = decode_qr_from_camera()
+
+    if decoded_chunks:
+        reassembled_file_path = os.path.join(RECEIVE_DIR, "reassembled_file.bin")
+        assemble_file(decoded_chunks, reassembled_file_path)
+        print(f"Файл собран: {reassembled_file_path}")
+    else:
+        print("Не удалось расшифровать QR-коды.")
 
 def main():
     if not os.path.exists(SEND_DIR):
         os.makedirs(SEND_DIR)
     if not os.path.exists(RECEIVE_DIR):
         os.makedirs(RECEIVE_DIR)
+    
+    root = tk.Tk()
+    mode_selection_app = ModeSelectionGUI(root)
+    root.mainloop()
 
-    gui_thread = threading.Thread(target=run_gui)
-    gui_thread.start()
+    if mode_selection_app.selected_mode == "server":
+        run_gui()
+    elif mode_selection_app.selected_mode == "client":
+        run_client()
+    else:
+        print("Режим не выбран. Завершение работы.")
+    # gui_thread = threading.Thread(target=run_gui)
+    # gui_thread.start()
 
-    gui_thread.join()
+    # gui_thread.join()
 
 
 

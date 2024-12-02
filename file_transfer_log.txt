@@ -130,3 +130,94 @@
 2024-12-01 23:43:28,450 - INFO - ���� ��� ������ � : receive\4e796ede-811e-48d0-bd40-639e43f4e92c.pdf
 2024-12-01 23:43:28,542 - INFO - ��� QR ���� ���� ������� �: C:/Users/User/Desktop/���������_TSARKA/4e796ede-811e-48d0-bd40-639e43f4e92c.pdf
 2024-12-01 23:43:28,542 - INFO - ������������ ���� ��� ������: send\4e796ede-811e-48d0-bd40-639e43f4e92c.pdf
+2024-12-02 18:02:36,603 - INFO - Распознан новый файл: /home/atastemi/aitu/blocks.php
+2024-12-02 18:02:36,609 - INFO - КЛюч был создан для: /home/atastemi/aitu/blocks.php
+2024-12-02 18:02:36,610 - INFO - Файл был разделен: /home/atastemi/aitu/blocks.php
+2024-12-02 18:02:49,221 - INFO - Преображение чанков в QR: /home/atastemi/aitu/blocks.php
+2024-12-02 18:03:01,174 - INFO - QR код был успешно расшифрован: /home/atastemi/aitu/blocks.php
+2024-12-02 18:03:01,175 - INFO - Файл был создан в : receive/blocks.php
+2024-12-02 18:03:01,180 - INFO - Все QR коды были успешны в: /home/atastemi/aitu/blocks.php
+2024-12-02 18:03:01,181 - INFO - Оригинальный файл был удален: send/blocks.php
+2024-12-02 18:27:11,532 - INFO - Распознан новый файл: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:27:11,534 - INFO - КЛюч был создан для: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:27:11,535 - INFO - Файл был разделен: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:27:11,596 - INFO - Преображение чанков в QR: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:27:11,596 - INFO - Ошибка при обработке файла /home/atastemi/File_local_transfer/README.md: 'FileTransferGUI' object has no attribute 'display_qr_code'
+2024-12-02 18:28:31,146 - INFO - Распознан новый файл: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:28:31,150 - INFO - КЛюч был создан для: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:28:31,150 - INFO - Файл был разделен: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:28:31,220 - INFO - Преображение чанков в QR: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:28:31,240 - INFO - Ошибка при обработке файла /home/atastemi/File_local_transfer/README.md: name 'time' is not defined
+2024-12-02 18:32:10,952 - INFO - Распознан новый файл: /home/atastemi/aitu/blocks.php
+2024-12-02 18:32:10,972 - INFO - КЛюч был создан для: /home/atastemi/aitu/blocks.php
+2024-12-02 18:32:10,973 - INFO - Файл был разделен: /home/atastemi/aitu/blocks.php
+2024-12-02 18:32:23,126 - INFO - Преображение чанков в QR: /home/atastemi/aitu/blocks.php
+2024-12-02 18:34:59,169 - INFO - Распознан новый файл: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:34:59,172 - INFO - КЛюч был создан для: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:34:59,172 - INFO - Файл был разделен: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:34:59,241 - INFO - Преображение чанков в QR: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:34:59,278 - INFO - Ошибка при обработке файла /home/atastemi/File_local_transfer/README.md: Calling Tcl from different apartment
+2024-12-02 18:35:36,543 - INFO - Распознан новый файл: /home/atastemi/aitu/hash.txt
+2024-12-02 18:35:36,556 - INFO - КЛюч был создан для: /home/atastemi/aitu/hash.txt
+2024-12-02 18:35:36,556 - INFO - Файл был разделен: /home/atastemi/aitu/hash.txt
+2024-12-02 18:35:36,581 - INFO - Преображение чанков в QR: /home/atastemi/aitu/hash.txt
+2024-12-02 18:35:36,616 - INFO - Ошибка при обработке файла /home/atastemi/aitu/hash.txt: Calling Tcl from different apartment
+2024-12-02 18:45:34,900 - INFO - Распознан новый файл: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:45:34,902 - INFO - КЛюч был создан для: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:45:34,902 - INFO - Файл был разделен: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:45:34,967 - INFO - Преображение чанков в QR: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:45:35,969 - INFO - Ошибка при обработке файла /home/atastemi/File_local_transfer/README.md: main thread is not in main loop
+2024-12-02 18:48:38,571 - INFO - Распознан новый файл: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:48:38,584 - INFO - КЛюч был создан для: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:48:38,585 - INFO - Файл был разделен: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:48:38,651 - INFO - Преображение чанков в QR: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:48:39,654 - INFO - Ошибка при обработке файла /home/atastemi/File_local_transfer/README.md: main thread is not in main loop
+2024-12-02 18:49:24,899 - INFO - Распознан новый файл: /home/atastemi/File_local_transfer/requirements.txt
+2024-12-02 18:49:24,904 - INFO - КЛюч был создан для: /home/atastemi/File_local_transfer/requirements.txt
+2024-12-02 18:49:24,904 - INFO - Файл был разделен: /home/atastemi/File_local_transfer/requirements.txt
+2024-12-02 18:49:24,939 - INFO - Преображение чанков в QR: /home/atastemi/File_local_transfer/requirements.txt
+2024-12-02 18:49:25,942 - INFO - Ошибка при обработке файла /home/atastemi/File_local_transfer/requirements.txt: main thread is not in main loop
+2024-12-02 18:51:13,030 - INFO - Распознан новый файл: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:51:13,035 - INFO - КЛюч был создан для: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:51:13,035 - INFO - Файл был разделен: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:51:13,098 - INFO - Преображение чанков в QR: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:51:14,100 - INFO - Ошибка при обработке файла /home/atastemi/File_local_transfer/README.md: main thread is not in main loop
+2024-12-02 18:55:15,599 - INFO - Распознан новый файл: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:55:15,601 - INFO - КЛюч был создан для: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:55:15,602 - INFO - Файл был разделен: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:55:15,671 - INFO - Преображение чанков в QR: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:55:16,675 - INFO - Ошибка при обработке файла /home/atastemi/File_local_transfer/README.md: main thread is not in main loop
+2024-12-02 18:56:21,997 - INFO - Распознан новый файл: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:56:22,010 - INFO - КЛюч был создан для: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:56:22,011 - INFO - Файл был разделен: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:56:22,082 - INFO - Преображение чанков в QR: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:56:22,083 - INFO - Ошибка при обработке файла /home/atastemi/File_local_transfer/README.md: name 'self' is not defined
+2024-12-02 18:58:58,859 - INFO - Распознан новый файл: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:58:58,865 - INFO - КЛюч был создан для: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:58:58,866 - INFO - Файл был разделен: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:58:58,930 - INFO - Преображение чанков в QR: /home/atastemi/File_local_transfer/README.md
+2024-12-02 18:58:59,933 - INFO - Ошибка при обработке файла /home/atastemi/File_local_transfer/README.md: main thread is not in main loop
+2024-12-02 19:00:44,729 - INFO - Распознан новый файл: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:00:44,732 - INFO - КЛюч был создан для: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:00:44,732 - INFO - Файл был разделен: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:00:44,787 - INFO - Преображение чанков в QR: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:00:44,831 - INFO - QR код был успешно расшифрован: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:00:44,833 - INFO - Файл был создан в : receive/README.md
+2024-12-02 19:00:44,835 - INFO - Все QR коды были успешны в: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:00:44,836 - INFO - Оригинальный файл был удален: send/README.md
+2024-12-02 19:01:58,646 - INFO - Распознан новый файл: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:01:58,651 - INFO - КЛюч был создан для: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:01:58,651 - INFO - Файл был разделен: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:01:58,721 - INFO - Преображение чанков в QR: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:01:58,756 - INFO - QR код был успешно расшифрован: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:01:58,760 - INFO - Файл был создан в : receive/README.md
+2024-12-02 19:01:58,762 - INFO - Все QR коды были успешны в: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:01:58,763 - INFO - Оригинальный файл был удален: send/README.md
+2024-12-02 19:02:24,408 - INFO - Распознан новый файл: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:02:24,426 - INFO - КЛюч был создан для: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:02:24,427 - INFO - Файл был разделен: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:02:24,502 - INFO - Преображение чанков в QR: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:02:29,536 - INFO - QR код был успешно расшифрован: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:02:29,537 - INFO - Файл был создан в : receive/README.md
+2024-12-02 19:02:29,537 - INFO - Все QR коды были успешны в: /home/atastemi/File_local_transfer/README.md
+2024-12-02 19:02:29,537 - INFO - Оригинальный файл был удален: send/README.md
