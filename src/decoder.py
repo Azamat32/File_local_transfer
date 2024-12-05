@@ -3,6 +3,8 @@ from PIL import Image
 import os
 import base64
 import cv2
+import numpy as np
+import logging
 
 # from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 # from cryptography.hazmat.backends import default_backend
@@ -61,10 +63,11 @@ def decode_qr_from_directory(key, directory):
 
 
 
+
 def decode_qr_from_camera():
     """
     Captures frames from the camera, decodes QR codes in real-time,
-    and returns the decoded data.
+    and returns the decoded data as chunks.
 
     Returns:
         list: List of decoded chunks from QR codes.
@@ -88,7 +91,7 @@ def decode_qr_from_camera():
         decoded_objects = decode(frame)
         for obj in decoded_objects:
             try:
-                # Extract and decode data
+                # Extract and decode data from the QR code
                 qr_data = obj.data.decode('utf-8')
                 print(f"QR Code detected: {qr_data}")
 
@@ -96,9 +99,9 @@ def decode_qr_from_camera():
                 decoded_chunk = base64.b64decode(qr_data)
                 print(decoded_chunk)
                 decoded_chunks.append(decoded_chunk)
-                if len(decoded_chunks) >= 5:  # Example: Stop after 5 chunks (or another condition)
-                    print("Collected enough chunks, stopping QR scanning.")
-                    break  # Exit the loop when enough chunks are collected
+
+                # After processing one QR code, stop scanning and move to the next frame
+                break  # Stop processing the current frame after decoding a QR code
 
             except Exception as e:
                 print(f"Error decoding QR: {e}")

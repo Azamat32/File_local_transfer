@@ -36,7 +36,7 @@ class FileTransferGUI:
         self.root.title("Перенос файла")
         self.send_dir = send_dir
         self.callback = callback
-
+        self.qr_window = None
         self.status_label = tk.Label(root, text="Статус: Ожидание...", font=("Arial", 14))
         self.status_label.pack(pady=10)
 
@@ -106,34 +106,49 @@ class FileTransferGUI:
             self.update_status(f"Ошибка: {e}")
             messagebox.showerror("Произошла ошибка:", str(e))
             
-    def display_qr_code(self, qr_code_path):
-        # Создаём новое окно для отображения QR-кода
+    def display_qr_code(self, qr_code_path, i):
+        # Create a new window for displaying the QR code
         qr_window = tk.Toplevel(self.root)
-        qr_window.configure(bg='black')  # Устанавливаем чёрный фон
+        qr_window.configure(bg='black')  # Set black background
 
-        # Загрузка QR-кода
-        qr_image = tk.PhotoImage(file=qr_code_path)
-
-        # Масштабируем изображение под размер окна
+        # Label to show the QR code index
+        qr_info_label = tk.Label(qr_window, text=f"QR-код номер: {i}", fg="white", bg="black", font=("Helvetica", 16))
+        qr_info_label.pack(side="bottom", pady=10)
         screen_width = qr_window.winfo_screenwidth()
         screen_height = qr_window.winfo_screenheight()
 
-        # Adjust the window size to match the image size, or you can set a fixed size
-        qr_window.geometry(f"{qr_image.width()}x{qr_image.height()}")
+        # Load the QR code image using Pillow to scale it
+        img = Image.open(qr_code_path)
 
-        # Централизованное отображение QR-кода
+        # Resize the image to fit within 900x900, maintaining aspect ratio
+        img = img.resize((700, 800), Image.Resampling.LANCZOS)  # This resizes the image to fit within the max dimensions
+        qr_image = ImageTk.PhotoImage(img)
+
+        if self.qr_window:
+            previous_x = self.qr_window.winfo_x()
+            previous_y = self.qr_window.winfo_y()
+            qr_window.geometry(f"+{previous_x}+{previous_y}")
+        else:
+            screen_width = qr_window.winfo_screenwidth()
+            screen_height = qr_window.winfo_screenheight()
+            qr_window.geometry(f"{screen_width}x{screen_height}+0+0")  # Fullscreen size
+
+        # Adjust window size to match the image size
+        # qr_window.geometry(f"{screen_width}x{screen_height}+0+0")  # Set the window size to fullscreen
+
+        # Center the QR code within the window
         qr_label = tk.Label(qr_window, image=qr_image, bg='black')
         qr_label.image = qr_image
-        qr_label.pack(expand=True, padx=20, pady=20)
+        qr_label.pack(expand=True)
 
-        # Закрытие окна QR-кода по нажатию клавиши
+        # Close the QR code window when the Escape key is pressed
         def close_qr(event=None):
             qr_window.destroy()
 
-        qr_window.bind("<Escape>", close_qr)  # Закрытие по клавише Escape
+        qr_window.bind("<Escape>", close_qr)
 
-        qr_window.mainloop()
-
+        # After displaying the QR code, destroy the window after 5 seconds
+        qr_window.after(5000, close_qr)  # 5000 ms = 5 seconds
 
     def quit_app(self):
         self.root.destroy()

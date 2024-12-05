@@ -47,20 +47,20 @@ def run_server_gui(root):
 
             for i, qr_code in enumerate(qr_codes):
                 print(f"Показ QR-кода {i + 1}/{len(qr_codes)}")
-                app.display_qr_code(qr_code)  # Отображение QR-кода через GUI
+                app.display_qr_code(qr_code,i)  # Отображение QR-кода через GUI
                 time.sleep(5)  # Интервал между показами
 
-            decoded_chunks = decode_qr_from_directory(key, directory=QR_CODES_DIR)
-            if not decoded_chunks:
-                log_message(f"Ошибка при расшифровке QR-кодов: {file_path}")
-                return
+            # decoded_chunks = decode_qr_from_directory(key, directory=QR_CODES_DIR)
+            # if not decoded_chunks:
+            #     log_message(f"Ошибка при расшифровке QR-кодов: {file_path}")
+            #     return
 
-            reassembled_file_path = os.path.join(RECEIVE_DIR, os.path.basename(file_path))
-            assemble_file(decoded_chunks, reassembled_file_path)
-            log_message(f"Файл собран в: {reassembled_file_path}")
+            # reassembled_file_path = os.path.join(RECEIVE_DIR, os.path.basename(file_path))
+            # assemble_file(decoded_chunks, reassembled_file_path)
+            # log_message(f"Файл собран в: {reassembled_file_path}")
 
-            cleanup_qr_codes(QR_CODES_DIR)
-            log_message(f"QR-коды удалены: {file_path}")
+            # cleanup_qr_codes(QR_CODES_DIR)
+            # log_message(f"QR-коды удалены: {file_path}")
 
         except Exception as e:
             log_message(f"Ошибка при обработке файла {file_path}: {e}")
@@ -70,6 +70,7 @@ def run_server_gui(root):
 
 
 def run_client():
+    log_message = lambda msg: (logging.info(msg), print(msg))
     print("Клиент: Открытие камеры для считывания QR-кодов...")
     decoded_chunks = decode_qr_from_camera()
 
@@ -79,7 +80,9 @@ def run_client():
         print(f"Файл собран: {reassembled_file_path}")
     else:
         print("Не удалось расшифровать QR-коды.")
-
+    
+    cleanup_qr_codes(QR_CODES_DIR)
+    log_message(f"QR-коды удалены")
 
 def main():
     if not os.path.exists(SEND_DIR):
