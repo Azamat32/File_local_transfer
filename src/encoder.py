@@ -6,7 +6,7 @@ from cryptography.hazmat.backends import default_backend
 
 
 
-def split_file_to_chunks(file_path,key, max_chunk_size=1024):
+def split_file_to_chunks(file_path,key, max_chunk_size=700):
 
     # if len(key) not in (16, 24, 32):
     #     raise ValueError("Ошибка при валидации ключа.")

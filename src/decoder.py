@@ -110,7 +110,7 @@ def decode_qr_from_camera():
                 # Handle chunk format: base64-encoded encrypted data
                 decoded_chunk = base64.b64decode(base64_chunk)
                 if decoded_chunk not in decoded_chunks:
-                    print(f"New chunk detected: {decoded_chunk}")
+                    print(f"New chunk detected")
                     decoded_chunks.append(decoded_chunk)
                 else:
                     print("Duplicate chunk detected. Skipping.")

@@ -49,7 +49,7 @@ def run_server_gui(root):
             for i, qr_code in enumerate(qr_codes):
                 print(f"Показ QR-кода {i + 1}/{len(qr_codes)}")
                 app.display_qr_code(qr_code,i)  # Отображение QR-кода через GUI
-                time.sleep(10)  # Интервал между показами
+                time.sleep(5)  # Интервал между показами
 
             # decoded_chunks = decode_qr_from_directory(key, directory=QR_CODES_DIR)
             # if not decoded_chunks:
@@ -82,8 +82,8 @@ def run_client():
     else:
         print("Не удалось расшифровать QR-коды.")
     
-    cleanup_qr_codes(QR_CODES_DIR)
-    log_message(f"QR-коды удалены")
+    # cleanup_qr_codes(QR_CODES_DIR)
+    # log_message(f"QR-коды удалены")
 
 def main():
     if not os.path.exists(SEND_DIR):

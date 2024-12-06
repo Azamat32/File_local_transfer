@@ -121,7 +121,7 @@ class FileTransferGUI:
         img = Image.open(qr_code_path)
 
         # Resize the image to fit within 900x900, maintaining aspect ratio
-        img = img.resize((700, 800), Image.Resampling.LANCZOS)  # This resizes the image to fit within the max dimensions
+        img = img.resize((600, 700), Image.Resampling.LANCZOS)  # This resizes the image to fit within the max dimensions
         qr_image = ImageTk.PhotoImage(img)
 
         if self.qr_window:
@@ -148,7 +148,7 @@ class FileTransferGUI:
         qr_window.bind("<Escape>", close_qr)
 
         # After displaying the QR code, destroy the window after 5 seconds
-        qr_window.after(100000, close_qr)  # 5000 ms = 5 seconds
+        qr_window.after(5000, close_qr)  # 5000 ms = 5 seconds
 
     def quit_app(self):
         self.root.destroy()
