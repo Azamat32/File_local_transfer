@@ -74,13 +74,14 @@ def decode_qr_from_camera():
     """
     print("Opening camera. Press 'q' to quit.")
     decoded_chunks = []
-    
+    file_name = None
     # Open the camera
     cap = cv2.VideoCapture(0)  # 0 is the default camera
     if not cap.isOpened():
         print("Failed to open camera.")
         return None
-
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)  # Set width
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)  # Set heigh
     while True:
         ret, frame = cap.read()
         if not ret:
@@ -93,15 +94,29 @@ def decode_qr_from_camera():
             try:
                 # Extract and decode data from the QR code
                 qr_data = obj.data.decode('utf-8')
-                print(f"QR Code detected: {qr_data}")
+                print(f"QR Code detected")
+                qr_data_parts = qr_data.split('|')
 
+
+
+                print(qr_data_parts[0],qr_data_parts[1],)
+                if qr_data_parts[0] == "filename":
+                    file_name = qr_data_parts[1]
+                    print(f"File name decoded: {file_name}")
+                    continue
+
+                base64_chunk = qr_data_parts[2]
+  
                 # Handle chunk format: base64-encoded encrypted data
-                decoded_chunk = base64.b64decode(qr_data)
-                print(decoded_chunk)
-                decoded_chunks.append(decoded_chunk)
+                decoded_chunk = base64.b64decode(base64_chunk)
+                if decoded_chunk not in decoded_chunks:
+                    print(f"New chunk detected: {decoded_chunk}")
+                    decoded_chunks.append(decoded_chunk)
+                else:
+                    print("Duplicate chunk detected. Skipping.")
 
-                # After processing one QR code, stop scanning and move to the next frame
-                break  # Stop processing the current frame after decoding a QR code
+
+
 
             except Exception as e:
                 print(f"Error decoding QR: {e}")
@@ -132,7 +147,7 @@ def decode_qr_from_camera():
 
     if decoded_chunks:
         print("Decoding complete.")
-        return decoded_chunks
+        return decoded_chunks,file_name
     else:
         print("No QR codes decoded.")
         return None

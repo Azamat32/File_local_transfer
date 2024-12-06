@@ -41,14 +41,15 @@ def run_server_gui(root):
 
             chunks = split_file_to_chunks(file_path, key)
             log_message(f"Файл разделён на чанки: {file_path}")
+            file_name = os.path.basename(file_path)
 
-            qr_codes = encode_chunks_to_qr(chunks)
+            qr_codes = encode_chunks_to_qr(chunks,file_name)
             log_message(f"Чанки преобразованы в QR-коды: {file_path}")
 
             for i, qr_code in enumerate(qr_codes):
                 print(f"Показ QR-кода {i + 1}/{len(qr_codes)}")
                 app.display_qr_code(qr_code,i)  # Отображение QR-кода через GUI
-                time.sleep(5)  # Интервал между показами
+                time.sleep(10)  # Интервал между показами
 
             # decoded_chunks = decode_qr_from_directory(key, directory=QR_CODES_DIR)
             # if not decoded_chunks:
@@ -72,10 +73,10 @@ def run_server_gui(root):
 def run_client():
     log_message = lambda msg: (logging.info(msg), print(msg))
     print("Клиент: Открытие камеры для считывания QR-кодов...")
-    decoded_chunks = decode_qr_from_camera()
+    decoded_chunks,file_name = decode_qr_from_camera()
 
     if decoded_chunks:
-        reassembled_file_path = os.path.join(RECEIVE_DIR, "reassembled_file.bin")
+        reassembled_file_path = os.path.join(RECEIVE_DIR, file_name)
         assemble_file(decoded_chunks, reassembled_file_path)
         print(f"Файл собран: {reassembled_file_path}")
     else:

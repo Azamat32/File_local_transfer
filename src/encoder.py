@@ -30,13 +30,20 @@ def split_file_to_chunks(file_path,key, max_chunk_size=1024):
     return chunks
 
 
-def encode_chunks_to_qr(chunks, output_dir="qr_codes"):
+def encode_chunks_to_qr(chunks,file_name, output_dir="qr_codes"):
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
     qr_code_paths = []
+    qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_L)
+    qr.add_data(f"filename|{file_name}")
+    qr.make(fit=True)
 
+    qr_code_path = os.path.join(output_dir, "chunk_0_filename.png")
+    img = qr.make_image(fill_color="black", back_color="white")
+    img.save(qr_code_path)
+    qr_code_paths.append(qr_code_path)
     total_chunks = len(chunks)
     for index, chunk in enumerate(chunks):
         

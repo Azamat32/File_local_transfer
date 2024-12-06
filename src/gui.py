@@ -148,7 +148,7 @@ class FileTransferGUI:
         qr_window.bind("<Escape>", close_qr)
 
         # After displaying the QR code, destroy the window after 5 seconds
-        qr_window.after(5000, close_qr)  # 5000 ms = 5 seconds
+        qr_window.after(100000, close_qr)  # 5000 ms = 5 seconds
 
     def quit_app(self):
         self.root.destroy()
